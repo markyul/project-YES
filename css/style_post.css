@@ -1,0 +1,83 @@
+#post_view{
+	color:white;
+}
+#post_header{
+	font-size:1.4em;
+	border-bottom:1px solid #848484;
+	padding-top:40px;
+	padding-bottom:5px;
+	padding-left:10px;
+	margin-bottom:5px;
+}
+
+#post_info{
+	text-align:right;
+	font-size:0.8em;
+}
+#post_info span{
+	padding-left:20px;
+	padding-right:10px;
+}
+
+#post_content{
+	min-height:200px;
+	padding-left:10px;
+	padding-top:10px;
+	padding-bottom:5px;
+	line-height:150%;
+	border-bottom:1px solid #848484;
+}
+
+#comment_box{
+	padding:10px;
+	border-bottom:1px solid #848484;
+}
+#comment_box .comment_info{
+	color:#848484;
+	font-size:0.8em;
+	margin-bottom:5px;
+}
+#comment_box .comment_info a{
+	color:#D8D8D8;
+	
+}
+.dat_edit {
+	display:none;
+}
+.dap_edit_t{
+	width:520px;
+	height:70px;
+	position: absolute;
+	top: 40px;
+}
+.re_mo_bt {
+	position: absolute;
+	top:40px;
+	right: 5px;
+	width: 90px;
+	height: 72px;
+}
+
+#comment_insert textarea{
+	margin-top:5px;
+}
+
+@media(min-width:1115px){
+	#comment_insert button{
+		margin-top:5px;
+		margin-left:92%;
+	}
+}
+@media(max-width:1115px){
+	#comment_insert button{
+		margin-top:5px;
+	}
+}
+
+#up_del_btn{
+	padding:0px;
+	padding-top:40px;
+}
+#up_del_btn button{
+	margin-top:10px;
+}

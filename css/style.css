@@ -1,0 +1,224 @@
+body{
+	font-family: "Nanum Gothic", sans-serif;
+	background-color:#f1f1f1;
+}
+.wrapper{
+	max-width:1100px;
+	margin:0 auto;
+	padding:0 15px;
+	box-sizing:border-box;
+}
+
+.clearfix::after{display:block;content:'';float:none;clear:both;}
+.clearfix>*{float:left}
+
+
+
+
+#header{
+	height: 60px;
+	position:relative;
+	z-index: 9999;
+	background-color:white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+#header>.wrapper{
+	position:relative;
+}
+#header_logo{
+	width:150px;
+	font-size:0;
+}
+#header_nav{
+}
+#header_nav a{
+	height:60px;
+	display: inline-block;
+	padding: 20px 5px 10px;
+	min-width: 80px;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	color: #777;
+	border-bottom: 4px solid white;
+	vertical-align: bottom;
+	margin-right: 10px;
+	text-decoration: none;
+}
+#header_nav a:hover{
+	color: black;
+}
+#header_nav a.active{
+	border-bottom-color:red;
+	color: black;
+}
+
+#header_right{
+	float:right;
+	margin-top:9px;
+}
+
+#search_blank{
+	position: absolute;
+	right: 90px;
+	top: 2px;
+	margin-top:9px;
+}
+
+#header .header_search_input{
+	border-radius:50px;
+	min-width:200px;
+	padding:10px;
+	border:none;
+	background-color: #f5f5f5;
+	outline:none;
+	padding-left:20px;
+	font-size:13px;
+	font-weight:bold;
+}
+#header .btn_login{
+	margin-top:2px;
+}
+#header .picture_wrap{
+	background-repeat:no-repeat;
+	background-position:50%;
+	background-size:cover;
+	border-radius:50%;
+	width:40px;
+	height:40px;
+	cursor:pointer;
+	box-sizing:border-box;
+	border: 1px solid #ffffff;
+}
+#header .picture_wrap:active{
+	border-color:#2196F3;
+}
+
+
+.profile_popup_trigger{position:relative;}
+.profile_popup_wrap{position: absolute;display:inline-block;top: 100%;margin-top:-10px;left:0;background-color: white;padding: 20px 25px;min-width: 230px;box-sizing: border-box;box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);z-index:999;border-radius: 8px;}
+.profile_popup_wrap>.profile{}
+.profile_popup_wrap>.profile>a{color:black;text-decoration:none;}
+.profile_popup_wrap>.profile>a>.name{font-weight: bold;font-size: 15px;margin: 0 2px;}
+.profile_popup_wrap>.profile .thumb{width: 30px;height: 30px;display: inline-block;vertical-align: middle;background-size: cover;border-radius: 50%;}
+.profile_popup_wrap>.description{font-size:13px; color:#666;margin-top:6px;}
+
+
+.btn_follow{background-color: #e8441f;color:white;outline:none !important;font-size: 13px;padding: 3px 8px;}
+.btn_follow:after{content:'팔로우';display:inline;}
+.btn_follow:hover{background-color:#f9433a;color:white;}
+.btn_follow.following:after{content:'팔로잉'}
+.btn_follow.following{background-color: #eee;border:1px solid #b9b9b9; color: black;}
+
+
+
+
+.icon_live::before{content:'';display:inline-block;width:8px;height:8px;background-color:red;border-radius:50%;vertical-align:middle;margin-right:5px;}
+.icon_live::after{content:'생방송';display:inline;font-size:12px;color:red;font-weight:bold;}
+
+
+.tag::before{content:'#'; display: inline;}
+.tag{display:inline-block;background-color:#9797a2; border-radius:2px; padding:2px 5px 3px; font-size:12px; color:white;margin-right:3px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#toggle-m-navbar{display:none;border:none;background:none;color:black;width:40px; height:40px;position:absolute;right:20px;top:10px;border:1px solid #ddd;border-radius:5px;}
+#toggle-m-navbar>div{background-color:#ddd;height:3px;margin:3px 0;}
+@media(max-width:768px){
+	#toggle-m-navbar{display:block;}
+	#header_nav, #header_right{display: none;}
+
+	#header{
+		height: 80px;
+		position: fixed;
+		z-index: 9999;
+		background-color: white;
+		width: 100%;
+		left: 0;
+		top: 0;
+	}
+	#content{padding-top:80px;}
+
+	.state_bar{
+		width:100%;
+		height:20px;
+		background:black;
+	}
+	
+	#header_logo{
+		margin-left:-40px;
+	}
+	
+	#search_blank{
+		right: 70px;
+		top: 3px;
+	}
+	#header .header_search_input{
+		min-width: auto;
+		width: 150px;
+		padding-left: 15px;
+		font-size: 11px;
+		/* position: absolute;
+		right: 40px;
+		top: 32px;  */
+	}
+
+}
+.m_nav{
+	display:none;
+	position:fixed;
+	z-index: 999999;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+}
+.m_nav .bg{
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.3);
+	cursor:pointer;
+}
+.m_nav ul{
+	margin-top:20px;
+	position:absolute;
+	top:0;right:0;
+	max-width:300px;
+	width:90%;
+	height:100%;
+	background-color:white;
+	box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+.m_nav ul a{
+	display:block;
+	width:100%;
+	padding:15px 20px;
+	box-sizing:border-box;
+	font-weight:bold;
+	font-size:15px;
+	color:black;
+	text-decoration:none;
+	border-bottom:1px solid #ddd;
+}
+
+/* setting */
+#setting_wrap{
+	max-width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}

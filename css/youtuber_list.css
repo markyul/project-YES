@@ -1,0 +1,61 @@
+.container{
+}
+
+.col-4{
+	padding-right:0;
+	text-align:center;
+}
+.col-4 img{
+	max-width:150px;
+	width:100%;
+	margin-top:8px;
+}
+.col-8{
+}
+.col-8 li{
+	margin-bottom:3px;
+	
+}
+#name{
+	font-family:고딕;
+	font-size:20px;
+	font-weight:bold;
+}
+.col{
+	border-radius: 8px;
+	background-color: white;
+	margin-top: 15px;
+	padding: 20px 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.col:hover{
+	background-color:white;
+}
+.col a:link{text-decoration: none; color:black;}
+.col a:hover{text-decoration: none; color:black;}
+.col a:visited{text-decoration: none; color:black;}
+.row{
+}
+
+.profile_img_box{
+	position:relative;
+	width:50px;
+	height:50px;
+}
+.profile_img_box>.profile_img{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	padding-top:100%;
+	background-size:cover;
+	border-radius:100%;
+	background-position:50% 50%;
+}
+.col-md-4{
+	margin-right:0px;
+}
+#tag{
+	min-height:30px;
+}
+#introduce{display:inline-block; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis; height:28px;color: #555;font-size:14px;}

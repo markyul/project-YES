@@ -1,0 +1,131 @@
+#channel_art{
+	background-color: black;
+	width:100%;
+	padding-top: 18.692%;
+	background-size: auto 100%;
+}
+/* #channel_art img{
+	width:100%;
+	height:200px;
+} */
+
+#middle_profile{
+	width:100%;
+	background-color:#ddd;
+	margin-top:-3px;
+}
+
+#profile{
+}
+
+@media(min-width:701px){
+	#profile_box{
+		padding:20px 0;
+		margin-left:35%;
+	}
+}
+@media(max-width:700px){
+	#profile_box{
+		padding:20px 0;
+		margin-left:5%;
+	}
+}
+
+#profile_box .M_profile_img_box{
+	position:relative;
+	width:60px;
+	height:60px;
+	top:50%;
+}
+#profile_box .M_profile_img_box>.M_profile_img{
+	position: absolute;
+	left:0;
+	top:0;
+	margin-top:-50%;
+	width:100%;
+	padding-top:100%;
+	background-size:cover;
+	border-radius:100%;
+	background-position:50% 50%;
+}
+
+#profile .col-9{
+	line-height:1.8;
+}
+#profile .col-9 span{
+	margin-right:10px;
+}
+
+#middle_category{
+	width:100%;
+	background-color:#ddd;
+	margin-top:-3px;
+	text-align:center;
+}
+#notice_button{
+	margin-left:33%;
+}
+
+#notice_button a{
+	display:inline-block;
+	padding:20px 5px 10px;
+	min-width:50%;
+	width:50px;
+	text-align:center;
+	font-size:21px;
+	color:black;
+	vertical-align:bottom;
+	text-decoration:none;
+}
+@media(max-width:730px){
+	#notice_button a{
+		font-size:15px;
+	}
+}
+#comunity_button{
+	margin-right:33%;
+}
+#comunity_button a{
+	display:inline-block;
+	padding:20px 5px 10px;
+	min-width:80px;
+	text-align:center;
+	font-size:21px;
+	color:black;
+	vertical-align:bottom;
+	text-decoration:none;
+}
+@media(max-width:730px){
+	#comunity_button a{
+		font-size:15px;
+	}
+}
+.notice_button_true, .comunity_button_true{
+	border-bottom:3px solid #EB5757;
+}
+.notice_button_false, .comunity_button_false{
+	border-bottom:3px solid #aaa;
+}
+
+#blank .col-8{
+	padding-top:40px;
+	margin-bottom:20px;
+	border-bottom-width:5px;
+	border-bottom-color:#848484;
+	border-bottom-style:double;
+}
+#blank .header{
+	color:white;
+	font-size:1.5em;
+	margin-bottom:10px;
+	font-weight:bold;
+}
+#blank button{
+	margin-left:10px;
+	margin-bottom:5px;
+}
+
+#bottom_page{
+	background-color:#2E2E2E;
+	min-height:520px;
+}

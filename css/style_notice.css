@@ -1,0 +1,37 @@
+.notice_content{
+	color:#FFFFFF;
+	border:1px solid;
+	border-color:#848484;
+	padding:20px;
+	margin-bottom:20px;
+}
+
+.profile_img_box{
+	position:relative;
+	width:50px;
+	height:50px;
+	margin-left:10px;
+}
+.profile_img_box>.profile_img{
+	position: absolute;
+	left:0;
+	top:0;
+	width:100%;
+	padding-top:100%;
+	background-size:cover;
+	border-radius:100%;
+	background-position:50% 50%;
+}
+.notice_info{
+	color:#848484;
+	font-size:0.8em;
+	margin-bottom:5px;
+}
+.notice_info a{
+	color:#D8D8D8;
+	
+}
+
+.content_name{
+	margin-bottom:5px;
+}
